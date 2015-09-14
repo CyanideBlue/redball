@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+            <head>
+            <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js "></script>
+            <script type="text/javascript">
+           
+            function moveRight(){
+            redball.left=redball.left+10;
+            }
+            
+            function moveLeft(){
+             redball.left=redball.left-10;   
+            }
+            function moveUp(){
+            redball.top=redball.top-10;    
+            
+            }
+            function moveDown(){
+                redball.top=redball.top+10;
+            }
+            function smashBall(){
+                
+            }
+            
+            
+            </script>
+        </head>
+    <body>
+        <img id ="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+        <button onclick="moveRight()">move right</button>
+        <button onclick="moveLeft()">move left</button>
+        <button onclick="moveUp()">move up</button>
+        <button onclick="moveDown()">move down</button>
+        <button></button>
+
+
+
+    </body>
+</html>
