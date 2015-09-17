@@ -19,13 +19,139 @@
                 redball.top=redball.top+10;
             }
             function moveSquare(){
-                for(i=0; i<8;i++){
+                i = 0;
+                while(i<8){
                     moveRight();
+                    i++;
+                } i = 0;
+                 while(i<8){
                     moveDown();
+                    i++;
+                } i = 0;
+                 while(i<8){
                     moveLeft();
+                    i++;
+                } i = 0;
+                 while(i<8){
                     moveUp();
+                    i++;
                 }
             }
+            function moveDownRight() {
+                 i = 0;
+                while(i<8){
+                    moveRight();
+                    moveDown();
+                    i++;
+                }
+            }
+            function moveUpRight() {
+                 i = 0;
+                while(i<8){
+                    moveRight();
+                    moveUp();
+                    i++;
+                }
+            }
+             function moveDownLeft() {
+                 i = 0;
+                while(i<8){
+                    moveDown();
+                    moveLeft();
+                    i++;
+                }
+            }
+             function moveUpLeft() {
+                 i = 0;
+                while(i<8){
+                    moveUp();
+                    moveLeft();
+                    i++;
+                }
+            }
+             function moveTriangle() {
+                 i = 0;
+                while(i<8){
+                    moveDownRight();
+                    i++;
+                }
+                i = 0;
+                while(i<8){
+                    moveLeft();
+                    moveLeft();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveUpRight();
+                    i++;
+                }
+            }
+            function moveFigureEight() {
+                  i = 0;
+                while(i<8){
+                    moveRight();
+                    i++;
+                }
+                 i = 0;
+                while(i<8){
+                    moveDownLeft();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveRight();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveUpLeft();
+                    i++;
+                }
+            }
+            function moveOctagon() {
+                  i = 0;
+                while(i<8){
+                    moveRight();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveDownRight();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveDown();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveDownLeft();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveLeft();
+                    i++;
+                }
+                  i = 0;
+                while(i<8){
+                    moveUpLeft();
+                    i++;
+                }
+                    i = 0
+                while(i<8){
+                    moveUp();
+                        i++;
+                }
+                    i = 0
+                 while(i<8){
+                    moveUpRight();
+                        i++;
+                }
+            }
+            
             
             </script>
         </head>
@@ -36,6 +162,13 @@
         <button onclick="moveUp()">move up</button>
         <button onclick="moveDown()">move down</button>
         <button onclick="moveSquare()">move square</button>
+        <button onclick="moveDownRight()">move down right</button>
+        <button onclick="moveUpRight()">move up right</button>
+        <button onclick="moveDownLeft()">move down left</button>
+        <button onclick="moveUpLeft()">move up left</button>
+        <button onclick="moveTriangle()">move triangle</button>
+        <button onclick="moveFigureEight()">move figure eight</button>
+        <button onclick="moveOctagon()">move octagon</button>
 
 
 
