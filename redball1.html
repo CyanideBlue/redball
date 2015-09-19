@@ -6,7 +6,8 @@
            
             function moveRight(){
                 if(redball.left== 260){
-                console.log('right hit');
+                    moveDownLeft();
+                console.log('right wall hit');
                 }else{
             redball.left=redball.left+10;
                 }
@@ -14,6 +15,7 @@
             
             function moveLeft(){
                 if(redball.left== -10){
+                    moveDownRight();
                 console.log('left wall hit')
                 }else{
              redball.left=redball.left-10;  
@@ -22,6 +24,7 @@
             
             function moveUp(){
                 if(redball.top== 100){
+                    moveDownLeft();
                 console.log('top wall hit');
                 }else{
             redball.top=redball.top-10;    
@@ -31,7 +34,8 @@
             
             function moveDown(){
                 if(redball.top== 450){
-                    console.log('bottom wall hit')
+                    moveUpLeft();
+                    console.log('bottom wall hit');
                 }else{
                 redball.top=redball.top+10;
                 }
@@ -171,11 +175,11 @@
                         i++;
                 }
             }
-            
+   
             
             </script>
         </head>
-    <body>
+    <body bgcolor="#fefffd">
         <img id ="redball" src="http://lrn.icstars.org/redball.jpg"></img>
         <button onclick="moveRight()">move right</button>
         <button onclick="moveLeft()">move left</button>
