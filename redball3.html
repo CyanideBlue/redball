@@ -4,7 +4,7 @@
             <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js "></script>
             <script type="text/javascript">
            
-            function moveRight(){
+           function moveRight(){
                 if(redball.left== 260){
                     moveDownLeft();
                 console.log('right wall hit');
@@ -43,10 +43,10 @@
             
             
             function moveSquare(){
-                dfjks = 0;
-                while(dfjks<8){
+                i = 0;
+                while(i<8){
                     moveRight();
-                    dfjks++;
+                    i++;
                 } i = 0;
                  while(i<8){
                     moveDown();
